@@ -1,0 +1,11 @@
+.button_border_light
+  background transparent
+  border 1px solid lightColor
+  color lightColor
+  &:active
+    color darken(lightColor, changeColor)
+  &:focus
+    color darken(lightColor, changeColor)
+  &:hover
+    border 1px solid darken(lightColor, changeColor)
+    color darken(lightColor, changeColor)

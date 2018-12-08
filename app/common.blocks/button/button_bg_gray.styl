@@ -1,0 +1,11 @@
+.button_bg_gray
+  background darken(lightColor, changeColor)
+  color darkColor
+  transition-duration 0.35s
+  &:active
+    color darkColor
+  &:focus
+    color darkColor
+  &:hover
+    background darken(lightColor, changeColor * 2)
+    color darkColor

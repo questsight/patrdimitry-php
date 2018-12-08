@@ -1,0 +1,12 @@
+maxScreen(breakpoint)
+  @media only screen and (max-width: breakpoint - 1)
+    {block}
+minScreen(breakpoint)
+  @media only screen and (min-width: breakpoint)
+    {block}
+name()
+  font-family titleFont
+  font-size round(fontSize * 1.1)
+  margin 10px 0
+  +minScreen(breakpoint)
+    font-size round(fontSize * 1.2)
